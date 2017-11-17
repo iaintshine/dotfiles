@@ -1,10 +1,9 @@
 set nocompatible " vundle requires vi compatible mode to be disabled
 filetype off " disable filetype rules cache
-set rtp+=~/.vim/bundle/vundle/ " adjust vim's runtime path to include vundle location
-call vundle#rc() " call the vundle initialization function
+set rtp+=~/.vim/bundle/Vundle.vim/ " adjust vim's runtime path to include vundle location
+call vundle#begin() " call the vundle initialization function
 
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
@@ -38,6 +37,7 @@ Plugin 'honza/vim-snippets'
 "Hashicorp
 Plugin 'markcornick/vim-terraform'
 
+call vundle#end()
 filetype plugin indent on     " restore default behavior
 
 " let g:ycm_path_to_python_interpreter = '/usr/local/opt/pyenv/shims/python'
