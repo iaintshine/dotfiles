@@ -1,0 +1,29 @@
+[user]
+	name = Boguslaw Mista
+  email = bodziomista@gmail.com
+[core]
+  editor = /usr/local/bin/vim
+[color]
+  interactive = true
+  status = true
+  branch = true
+  diff = true
+[merge]
+  ff = false
+[alias]
+  s = status
+  st = status
+  c  = commit
+  cc = commit
+  co = checkout
+  br = branch
+  a = add
+  ap = add --patch
+  d = diff
+  dc = diff --cached
+  v = show
+  l = log --pretty=oneline -n 10
+  ll = log -n 10
+  cp = cherry-pick
+  ctags = !.git/hooks/ctags
+  news = log -p HEAD@{1}..HEAD@{0}
